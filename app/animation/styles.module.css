@@ -1,0 +1,36 @@
+.body {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.animationcontainer {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+  
+
+.animatedimage {
+  position: absolute;
+  top: -100%; /* Initially position the image above the container */
+  left: 10vw;
+  width: fit-content;
+  height: fit-content;
+  /* box-shadow:rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
+  animation: slideDown 2s ease-in forwards;
+  background-blend-mode: color-burn;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 15%;
+  }
+}
